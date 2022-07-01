@@ -1,0 +1,43 @@
+@keyframes sliding {
+    0% {
+        background-color: orange;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background-color: green;
+        top: 200px;
+    }
+
+    50% {
+        background-color: blueviolet;
+        top: 0;
+    }
+
+    75% {
+        background-color: royalblue;
+        top: 200px;
+    }
+
+    100% {
+        background-color: blue;
+        left: 800px;
+        top: 0;
+    }
+}
+
+.box {
+    width: 900px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(18, 15, 15);
+    border-radius: 50%;
+    position: relative;
+    animation: sliding 2s ease-in-out 1s infinite alternate;
+}
